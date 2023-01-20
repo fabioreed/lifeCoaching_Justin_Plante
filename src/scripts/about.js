@@ -6,4 +6,4 @@ function redirectHome() {
         location.replace('/')
     })
 }
-redirectHome()
+// redirectHome()

@@ -7,10 +7,58 @@
     height: 50px;
 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    position: relative;
 }
 
-.header__container > div {
-    display: none;
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1.7rem;
+    flex-direction: column;
+    margin-top: -23rem;
+    /* width: 100%; */
+
+    padding: 1rem;
+
+    border-radius: 8px;
+
+    background: rgb(255,255,255);
+
+    z-index: 1;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    transition: cubic-bezier(0.64, 0.02, 0.41, 1.25) .7s;
+
+    /* pointer-events: none; */
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.show-menu-mobile {
+    margin-top: 3.2rem;
+    /* pointer-events: all; */
+}
+
+.hidden-menu {
+    margin: -150%;
+}
+
+.burger-menu {
+    cursor: pointer;
+}
+
+.menu > button {
+    padding: .4rem 1rem;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--brand-color);
+    color: var(--white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .header__container > div > span { 
@@ -84,6 +132,7 @@
 /* Section TWO */
 .cards__container__section {
     position: relative;
+    background-color: #f5f5f5;
 }
 
 .cards__section {
@@ -187,24 +236,33 @@
         gap: 1rem;
     }
 
+    .menu {
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        background-color: transparent;
+        /* z-index: 2; */
+    }
+
     .burger-menu {
         display: none;
     }
     
-    .header__container > div > span {
+    .menu > span {
         font-size: .8rem;
-        transition: .2s ease;
+        transition: .4s ease;
         cursor: pointer;
     }
     
-    .header__container > div > span:hover {
+    .menu > span:hover {
         border-bottom: 2px solid var(--brown);
         color: var(--brand-color);
     
         font-size: .9rem;
     }
     
-    .header__container > div > button {
+    .menu > button {
         border-radius: 20px;
         border: 2px solid var(--brand-color);
         color: var(--brand-color);
@@ -220,7 +278,7 @@
         transition: .4s ease;
     }
     
-    .header__container > div > button:hover {
+    .menu > button:hover {
         background-color: var(--brand-color);
         color: var(--white);
         border: none;
@@ -274,11 +332,6 @@
         display: flex;
         justify-content: flex-end;
         margin: 3rem;
-    }
-
-    .cards__container__section {
-        /* border: 1px solid green; */
-        background-color: #f5f5f5;
     }
 
     .lista__container__section {
