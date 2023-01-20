@@ -1,0 +1,29 @@
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.6rem;
+
+    margin: 5rem auto;
+
+    width: 60%;
+}
+
+.about__container > h1 {
+    font-size: 3.1rem;
+    color: var(--brand-color);
+}
+
+.about {
+    color: var(--brown);
+}
+
+.about__container > p {
+    line-height: 160%;
+
+    font-size: .87rem;
+    font-weight: 300;
+
+    color: var(--brand-color);
+}
