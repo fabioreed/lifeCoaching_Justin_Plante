@@ -243,6 +243,7 @@
         position: fixed;
         top: 0;
         right: 0;
+        z-index: 2;
 
         background-color: var(--white);
 
@@ -404,5 +405,13 @@
     .card__desc > button:hover {
         background-color: var(--brand-color);
         color: var(--white);
+    }
+
+    .index__footer {
+        height: 100%;
+    }
+
+    .index__footer > ul > li {
+        font-size: .6rem;
     }
 }
