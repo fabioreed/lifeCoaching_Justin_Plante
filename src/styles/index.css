@@ -288,12 +288,12 @@
 }
 
 .amazon {
-    width: 75px;
-    height: 40px;
+    width: 65px;
+    height: 35px;
 
     position: absolute;
-    bottom: 40px;
-    left: 40px;
+    bottom: 15px;
+    left: 32px;
     /* z-index: 1000; */
 }
 
@@ -553,6 +553,14 @@
         height: 45px;
 
         font-size: 1rem;
+    }
+
+    .amazon {
+        width: 75px;
+        height: 40px;
+    
+        bottom: -40px;
+        left: 40px;
     }
 
     .index__footer {
