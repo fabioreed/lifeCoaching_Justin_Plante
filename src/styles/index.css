@@ -230,11 +230,10 @@
 .book__section__container > figure > img {
     width: 120px;
     margin: .4rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .book__section__container > div {
-    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -529,6 +528,11 @@
     }
 
     .book__section__container > figure > img {
+        width: 240px;
+        transition: .4s ease;
+    }
+
+    .book__section__container > figure > img:hover {
         width: 280px;
     }
 
@@ -547,6 +551,7 @@
 
     .book__section__container > div > p {
         font-size: .9rem;
+        line-height: 180%;
     }
 
     .book__section__container > div > a > button {
@@ -560,7 +565,7 @@
         width: 75px;
         height: 40px;
     
-        bottom: 40px;
+        bottom: 50px;
         left: 40px;
     }
 
