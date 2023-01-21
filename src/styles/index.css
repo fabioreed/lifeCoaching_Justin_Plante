@@ -142,6 +142,11 @@
     gap: .6rem;
 
     overflow-x: auto;
+
+    width: 100%;
+
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%);
+    background-attachment: fixed; */
 }
 
 .card__section {
@@ -200,16 +205,6 @@
     left: 17px;
 }
 
-.next {
-    width: 20px;
-
-    position: absolute;
-    top: 187px;
-    right: 0;
-
-    color: var(--brand-color);
-}
-
 /* Footer */
 .index__footer {
     background: rgb(37,93,115);
@@ -232,6 +227,15 @@
     color: var(--white);
     font-size: .4rem;
     font-weight: 300;
+}
+
+.next {
+    position: absolute;
+    top: 495px;
+    right: 5px;
+    z-index: 3;
+
+    width: 20px;
 }
 
 @media (min-width: 769px) {
@@ -267,6 +271,10 @@
     }
 
     .burger-menu {
+        display: none;
+    }
+
+    .next {
         display: none;
     }
     
