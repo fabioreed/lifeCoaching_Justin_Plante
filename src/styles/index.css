@@ -61,6 +61,14 @@
     font-size: .7rem;
     font-weight: 300;
     color: #716B64;
+
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.header__container > div > span:hover {
+    font-weight: 400;
+    font-size: .75rem;
 }
 
 .section__homepage__container {
@@ -247,7 +255,7 @@
 }
 
 .book__section__container > div > h3 {
-    color: var(--light-brown);
+    color: var(--dark-blue);
     font-size: 1.3rem;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -260,7 +268,7 @@
 }
 
 .book__section__container > div > a > button {
-    border: 1.4px solid var(--light-brown);
+    border: 1.7px solid var(--brand-color);
     border-radius: 12px;
 
     background-color: transparent;
@@ -533,7 +541,7 @@
     }
 
     .book__section__container > figure > img:hover {
-        width: 280px;
+        width: 255px;
     }
 
     .book__section__container > div {

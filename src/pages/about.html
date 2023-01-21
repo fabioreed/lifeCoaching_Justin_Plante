@@ -5,36 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/globalStyles.css">
-    <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/index.css">
     <title>About</title>
 </head>
 <body>
     <header class="header__container">
-        <span id="home">Home</span>
-        <span>About</span>
-        <span>Personal Development Coaching</span>
-        <span>Business Coaching</span>
-        <span>Group Coaching</span>
-        <button>Contact</button>
+        <div class="menu">
+            <span id="home">Home</span>
+            <!-- <span id="about">About</span> -->
+            <span>Personal Development Coaching</span>
+            <span>Business Coaching</span>
+            <span>Group Coaching</span>
+            <button>Contact</button>
+        </div>
+        <img class='burger-menu' src="../assets/burger-menu.svg">
     </header>
     <section class="about__container">
         <h1>Justin Plante <span class="slash">|</span> <span class="about">ABOUT</span></h1>
         <p>
-            Justin is a member of the International Coaching Federation (ICF) and had studied coaching from some of the most gifted leaders and coaches in the industry through Dream Releaser Coaching.
+            <b>Justin</b> is a member of the <a href="https://coachingfederation.org/" target="_blank"><i>International Coaching Federation (ICF)</i></a> and had studied coaching from some of the most gifted leaders and coaches in the industry through Dream Releaser Coaching.
             <br>
             <br>
-            Justin is also an experienced executive in the commercial insurance industry where he has served for 23 years in a variety of roles. Some of these include COO, EVP, SVP and in various national leadership roles for large insurance brokers and carriers.  He also is served as volunteer soccer coach for 20 years.
+            Justin is also an experienced executive in the commercial insurance industry where he has served for <i>23 years</i> in a variety of roles. Some of these include <b>COO, EVP, SVP</b> and in various national leadership roles for large insurance brokers and carriers.  He also is served as volunteer soccer coach for 20 years.
             <br>
             <br>
-            Justin had his MBA from Liberty University and specializes in executive coaching, business coaching, non-profit coaching, leadership development and personal development. <br>He serves on the board of a non profit organization helping troubled teens and serves in his local church along with his wife Christine.  He has 4 kids and 6 grandchildren and lives in the St Louis area
+            Justin had his <b>MBA</b> from <b>Liberty University</b> and <i>specializes in executive coaching</i>, business coaching, non-profit coaching, leadership development and personal development. <br>He serves on the board of a non profit organization helping troubled teens and serves in his local church along with his wife Christine.  He has 4 kids and 6 grandchildren and lives in the St Louis area.
         </p>
     </section>
-
     <div class="verse">
-        <p>Ephesians 3:20 Now unto him that is able to do exceeding abundantly above all that we ask or think, according to the power that worketh in us</p>
+        <p>Ephesians 3:20 Now unto him that is able to do exceeding abundantly above all that we ask or think, according to the power that worketh in us</p>
     </div>
 
-    <script src="./src/scripts/about.js"></script>
+    <section class="schedule__container">
+        <div class="background">
+            <h2>Are you ready to transform your life? 
+                <br>Schedule a session with me</h2>
+                <a href="https://calendly.com/" target="_blank"><button>Schedule</button></a>
+            
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eum aspernatur expedita animi deserunt accusamus sunt.</p>
+        <button>Contact</button>
+    </section>
+
+    <footer class="index__footer">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Personal Development Coaching</li>
+            <li>Business Coaching</li>
+            <li>Group Coaching</li>
+        </ul>
+        <img class='icf' src="../assets/ICF_Member.webp">
+    </footer>
+
+    <script type='module' src="./src/scripts/about.js"></script>
+    <script type='module' src="./src/scripts/index.js"></script>
 </body>
 </html>
