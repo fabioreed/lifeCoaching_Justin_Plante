@@ -135,6 +135,10 @@
 }
 
 @media (min-width: 769px) {
+    .about__container {
+        padding-top: 5rem;
+    }
+
     .about__container > h1 {
         font-size: 3.1rem;
     }
