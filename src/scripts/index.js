@@ -1,4 +1,4 @@
-import { redirectAbout, rendirectHome } from './about.js'
+import { redirectAbout } from './about.js'
 
 export function showMenu() {
     const button = document.querySelector('.burger-menu')
@@ -11,5 +11,13 @@ export function showMenu() {
 }
 showMenu()
 
+export function rendirectHome() {
+    const btn = document.getElementById('home')
+    
+    btn.addEventListener('click', () => {
+        console.log('oi')
+        location = '/index.html' 
+    })
+}
+
 redirectAbout()
-rendirectHome()

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="../assets/icons8-circled-j-50.png" type="image/x-icon">
+
     <link rel="stylesheet" href="../styles/globalStyles.css">
     <link rel="stylesheet" href="../styles/about.css">
     <link rel="stylesheet" href="../styles/index.css">
@@ -12,12 +15,12 @@
 <body>
     <header class="header__container">
         <div class="menu">
-            <span id="home">Home</span>
-            <!-- <span id="about">About</span> -->
-            <span>Personal Development Coaching</span>
-            <span>Business Coaching</span>
-            <span>Group Coaching</span>
-            <button>Contact</button>
+            <a href="../../index.html"><span id="home">Home</span></a>
+            <a href="../pages/about.html"><span id="about">About</span></a>
+            <a href="../pages/personal.html"><span id="personal">Personal Development Coaching</span></a>
+            <a href="../pages/business.html"><span id="business">Business Coaching</span></a>
+            <a href="../pages/group.html"><span id="group">Group Coaching</span></a>
+            <a href="../pages/contact.html"><button id="contact">Contact</button></a>
         </div>
         <img class='burger-menu' src="../assets/burger-menu.svg">
     </header>
@@ -42,28 +45,37 @@
             <h2>Are you ready to transform your life? 
                 <br>Schedule a session with me</h2>
                 <a href="https://calendly.com/" target="_blank"><button>Schedule</button></a>
-            
         </div>
     </section>
 
     <section class="contact">
         <h2>Contact Us</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eum aspernatur expedita animi deserunt accusamus sunt.</p>
-        <button>Contact</button>
+        <a href="../pages/contact.html"><button>Contact</button></a>
     </section>
 
     <footer class="index__footer">
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Personal Development Coaching</li>
-            <li>Business Coaching</li>
-            <li>Group Coaching</li>
+            <a href="../../index.html">
+                <li>Home</li>
+            </a>
+            <a href="../pages/about.html">
+                <li>About</li>
+            </a>
+            <a href="../pages/personal.html">
+                <li>Personal Development Coaching</li>
+            </a>
+            <a href="../pages/business.html">
+                <li>Business Coaching</li>
+            </a>
+            <a href="../pages/group.html">
+                <li>Group Coaching</li>
+            </a>
         </ul>
         <img class='icf' src="../assets/ICF_Member.webp">
     </footer>
 
-    <script type='module' src="./src/scripts/about.js"></script>
-    <script type='module' src="./src/scripts/index.js"></script>
+    <script type='module' src="../scripts/about.js"></script>
+    <script type='module' src="../scripts/index.js"></script>
 </body>
 </html>

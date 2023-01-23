@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="src/assets/icons8-circled-j-50.png" type="image/x-icon">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/globalStyles.css">
     <link rel="stylesheet" href="./src/styles/index.css">
@@ -15,12 +19,12 @@
 <body>
     <header class="header__container">
         <div class="menu">
-            <span>Home</span>
-            <span id="about">About</span>
-            <span>Personal Development Coaching</span>
-            <span>Business Coaching</span>
-            <span>Group Coaching</span>
-            <button>Contact</button>
+            <a href="index.html"><span id="home">Home</span></a>
+            <a href="src/pages/about.html"><span id="about">About</span></a>
+            <a href="src/pages/personal.html"><span id="personal">Personal Development Coaching</span></a>
+            <a href="src/pages/business.html"><span id="business">Business Coaching</span></a>
+            <a href="src/pages/group.html"><span id="group">Group Coaching</span></a>
+            <a href="src/pages/contact.html"><button id="contact">Contact</button></a>
         </div>
         <img class='burger-menu' src="./src/assets/burger-menu.svg">
     </header>
@@ -29,7 +33,7 @@
             <h2>Justin Plante <span class="slash">|</span>
                 <span class="life"> Life</span>Coach</h2>
             <p>Helping others to become the best version of themselves</p>
-            <button>Book Now</button>
+            <a href="https://calendly.com/" target="_blank"><button>Book Now</button></a>
         </div>
         <div class="justin__pic__container">
             <img src="./src/assets/Justin.jpg">
@@ -48,7 +52,7 @@
                 <div class="card__desc">
                     <span>Personal Development Coaching</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, tempore saepe? Illum distinctio et aliquid recusandae exercitationem quae necessitatibus quis natus? Assumenda, quis. Consequatur quos incidunt nisi eligendi officia sint!</p>
-                    <button>More info</button>
+                    <a href="src/pages/personal.html"><button>More Info</button></a>
                 </div>
             </li>
             <li class="card__section">
@@ -58,7 +62,7 @@
                 <div class="card__desc">
                     <span>Business Coaching</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, tempore saepe? Illum distinctio et aliquid recusandae exercitationem quae necessitatibus quis natus? Assumenda, quis. Consequatur quos incidunt nisi eligendi officia sint!</p>
-                    <button>More info</button>
+                    <a href="src/pages/business.html"><button>More Info</button></a>
                 </div>
             </li>
             <li class="card__section">
@@ -68,7 +72,7 @@
                 <div class="card__desc">
                     <span>Group Coaching</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, tempore saepe? Illum distinctio et aliquid recusandae exercitationem quae necessitatibus quis natus? Assumenda, quis. Consequatur quos incidunt nisi eligendi officia sint!</p>
-                    <button>More info</button>
+                    <a href="src/pages/group.html"><button>More Info</button></a>
                 </div>
             </li>
         </ul>
@@ -87,11 +91,21 @@
     </section>
     <footer class="index__footer">
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Personal Development Coaching</li>
-            <li>Business Coaching</li>
-            <li>Group Coaching</li>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="src/pages/about.html">
+                <li>About</li>
+            </a>
+            <a href="src/pages/personal.html">
+                <li>Personal Development Coaching</li>
+            </a>
+            <a href="src/pages/business.html">
+                <li>Business Coaching</li>
+            </a>
+            <a href="src/pages/group.html">
+                <li>Group Coaching</li>
+            </a>
         </ul>
         <img class='icf' src="src/assets/ICF_Member.webp">
     </footer>

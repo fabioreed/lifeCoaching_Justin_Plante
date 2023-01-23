@@ -1,27 +1,19 @@
-import { showMenu } from './index.js'
+import { showMenu, rendirectHome } from './index.js'
+
+const btnHome = document.querySelector('#home')
+const btn = document.querySelector('#about')
 
 export function redirectAbout() {
-    const btn = document.querySelector('#about')
-    console.log(btn)
+        
+    // btnHome.addEventListener('click', () => {
+    //     setTimeout(() => { location = '/index.html' }, 300)
+    // })
 
     btn.addEventListener('click', () => {
-        setTimeout(() => {
-
-            location.replace('/src/pages/about.html')
-
-        }, 300)
+        setTimeout(() => { location = '/src/pages/about.html' }, 300)
     })
 }
+
 redirectAbout()
-
-export function rendirectHome() {
-    const btn = document.querySelector('#home')
-    console.log(btn)
-    
-    btn.addEventListener('click', () => {
-        console.log('oi')
-        location.replace('/')
-    })
-}
 rendirectHome()
 showMenu()

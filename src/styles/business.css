@@ -1,0 +1,65 @@
+.business__container {
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+
+    height: 58vh;
+    width: 100%;
+
+    background-image: url('https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+}
+
+.business__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 0 .7rem;
+    height: 60vh;
+}
+
+.business__description > h2 {
+    font-size: 2rem;
+    color: var(--brand-color);
+}
+
+.business__description > p {
+    line-height: 140%;
+    color: var(--gray);
+    font-size: .7rem;
+}
+
+.business__description > a > button {
+    background-color: var(--brand-color);
+    color: var(--white);
+    border: none;
+    padding: .8rem 3rem;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: .4s ease;
+}
+
+.business__description > a > button:hover {
+    border: 1.3px solid var(--brand-color);
+    background-color: var(--white);
+    color: var(--brand-color);
+
+    padding: .8rem 4rem;
+}
+
+@media (min-width: 769px) {
+    .business__description > h2 {
+        font-size: 2rem;
+    }
+
+    .business__description > p {
+        font-size: .9rem;
+        width: 600px;
+        line-height: 150%;
+    }
+}

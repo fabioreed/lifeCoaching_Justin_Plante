@@ -31,7 +31,7 @@
 /* Schedule Session */
 
 .schedule__container {
-    height: 100vh;
+    height: 90vh;
 
     position: relative;
     z-index: 1;
@@ -88,7 +88,7 @@
 
 /* Contact Us */
 .contact {
-    height: 100vh;
+    height: 80vh;
     padding: 7rem;
 
     display: flex;
@@ -111,7 +111,7 @@
     color: var(--gray);
 }
 
-.contact > button {
+.contact > a > button {
     border: 1.7px solid var(--brand-color);
     border-radius: 12px;
 
@@ -128,7 +128,7 @@
     cursor: pointer;
 }
 
-.contact > button:hover {
+.contact > a > button:hover {
     background-color: transparent;
     color: var(--brand-color);
 }
