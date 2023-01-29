@@ -5,10 +5,35 @@
     align-items: center;
     gap: 2.6rem;
 
-    margin: 4rem auto;
+    margin: 2rem auto;
+    padding: .8rem;
 
-    width: 60%;
+    width: 90%;
+
+    /* border: 1px solid var(--light-brown); */
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+.span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 122px;
+    right: 61px;
+
+    font-size: .5rem;
+
+    display: none;
+}
+
+.span > span {
+    /* color: #878787; */
+    color: var(--light-brown);
+}
+
 
 .about__container > h1 {
     font-size: 1.3rem;
@@ -29,7 +54,6 @@
 }
 
 /* Schedule Session */
-
 .schedule__container {
     height: 90vh;
 
@@ -137,10 +161,63 @@
 @media (min-width: 769px) {
     .about__container {
         padding-top: 5rem;
+
+        position: relative;
+
+        padding: 2.7rem;
+
+        margin: 7rem auto 2rem auto;
+
+        height: 80vh;
+        width: 60%;
+
+        align-items: flex-start;
     }
 
     .about__container > h1 {
-        font-size: 3.1rem;
+        font-size: 2.4rem;
+    }
+
+    .pic_justin {
+        width: 120px;
+
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+        border-radius: 0 12px 0 0px;
+
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+        display: block;
+
+        opacity: .96;
+
+        border-bottom: 3px solid var(--gray);
+    }
+
+    .marcador {
+        width: 120px;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+    }
+
+    .span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: absolute;
+        top: 128px;
+        right: 24px;
+
+        font-size: .5rem;
+    }
+
+    .span > span {
+        color: #B4BEC9;
+        /* color: #DEEFE7 */
     }
 
     .about__container > p {

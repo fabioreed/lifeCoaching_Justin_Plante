@@ -78,6 +78,19 @@
     justify-content: space-between;
 
     padding: 2rem;
+
+    /*
+    background: rgb(255,255,255);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 50%, rgba(233,226,220,1) 100%); */
+
+    background: rgb(255,255,255);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 35%, rgba(245,245,245,1) 66%);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center-top;
+
+    object-fit: cover;
 }
 
 .justin__info__container {
@@ -453,8 +466,14 @@
     
     .justin__pic__container > img {
         width: 350px;
+        height: 100%;
         display: block;
-        border-radius: 50%;
+        /* border-radius: 50%; */
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     
     .justin__info__container > a > button {    
