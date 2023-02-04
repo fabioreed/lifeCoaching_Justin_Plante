@@ -53,9 +53,13 @@
     color: var(--brand-color);
 }
 
+.pic_justin {
+    display: none;
+}
+
 /* Schedule Session */
 .schedule__container {
-    height: 90vh;
+    height: 82vh;
 
     position: relative;
     z-index: 1;
@@ -64,15 +68,15 @@
 .background {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
     gap: 2rem;
 
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     padding: 2.7rem;
 
-    background-image: url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-image: url('https://images.pexels.com/photos/3616764/pexels-photo-3616764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-color: #f5f5f5;
     background-size: cover;
     background-position:center;
@@ -85,7 +89,7 @@
 }
 
 .schedule__container > div > h2 {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: var(--brand-color);
     z-index: 1;
 }
@@ -113,8 +117,8 @@
 
 /* Contact Us */
 .contact {
-    height: 80vh;
-    padding: 7rem;
+    padding: 2rem;
+    height: 98vh;
 
     display: flex;
     flex-direction: column;
@@ -122,8 +126,34 @@
     align-items: center;
     gap: 2rem;
 
+    margin: 0 auto;
+}
+
+.contact > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+
+    border-radius: 8px;
+
     background: rgb(255,255,255);
     background: linear-gradient(59deg, rgba(255,255,255,0.822391456582633) 0%, rgba(248,248,248,1) 53%);
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.contact > div > figure {
+    object-fit: contain; 
+    height: 50%;
+    width: 100%;
+}
+
+.contact > div > figure > img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    opacity: .2;
 }
 
 .contact > h2 {
@@ -131,12 +161,13 @@
     color: var(--brand-color);
 }
 
-.contact > p {
-    font-size: .7rem;
+.contact > div > p {
+    font-size: .8rem;
     color: var(--gray);
+    line-height: 150%;
 }
 
-.contact > a > button {
+.contact > div > a > button {
     border: 1.7px solid var(--brand-color);
     border-radius: 12px;
 
@@ -153,7 +184,7 @@
     cursor: pointer;
 }
 
-.contact > a > button:hover {
+.contact > div > a > button:hover {
     background-color: transparent;
     color: var(--brand-color);
 }
@@ -193,7 +224,7 @@
 
         opacity: .96;
 
-        border-bottom: 3px solid var(--gray);
+        border-bottom: 3px solid var(--light-brown);
     }
 
     .marcador {
@@ -238,5 +269,9 @@
         height: 52px;
 
         font-size: 1.1rem;
+    }
+
+    .contact {
+        width: 380px;
     }
 }

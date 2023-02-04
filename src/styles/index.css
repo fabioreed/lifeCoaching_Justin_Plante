@@ -79,10 +79,6 @@
 
     padding: 2rem;
 
-    /*
-    background: rgb(255,255,255);
-    background: linear-gradient(45deg, rgba(255,255,255,1) 50%, rgba(233,226,220,1) 100%); */
-
     background: rgb(255,255,255);
     background: linear-gradient(45deg, rgba(255,255,255,1) 35%, rgba(245,245,245,1) 66%);
 
@@ -167,13 +163,10 @@
     overflow-x: auto;
 
     width: 100%;
-
-    /* background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%);
-    background-attachment: fixed; */
 }
 
 .card__section {
-    width: 180px;
+    width: 200px;
     height: 360px;
     flex-shrink: 0;
 
@@ -228,6 +221,17 @@
     left: 17px;
 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.next {
+    position: absolute;
+    top: 495px;
+    right: 5px;
+    z-index: 3;
+
+    width: 20px;
+
+    display: none;
 }
 
 /* Section Book */
@@ -343,15 +347,6 @@
     color: var(--white);
     font-size: .4rem;
     font-weight: 300;
-}
-
-.next {
-    position: absolute;
-    top: 495px;
-    right: 5px;
-    z-index: 3;
-
-    width: 20px;
 }
 
 .icf {
